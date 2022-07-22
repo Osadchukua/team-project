@@ -1,0 +1,80 @@
+.header__title-pre {
+  font-size: 26px;
+  line-height: calc(30 / 26);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-title-pre-heder);
+}
+
+.header__title {
+  font-size: 48px;
+  line-height: calc(46 / 48);
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+
+.products__title-pre {
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-title-pre);
+}
+
+.products__title {
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+
+.products__title-cards {
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-title-products);
+}
+
+.about__title-pre {
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-title-pre);
+}
+
+.about__title {
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+
+.footer__title-pre {
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  color: var(--color-title-pre);
+}
+
+.footer__title {
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-title);
+}

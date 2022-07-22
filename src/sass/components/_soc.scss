@@ -14,7 +14,7 @@
   border-radius: 50%;
   color: #ffffff;
   background-color: var(--background-cos);
-  transition: background-color 250ms linear;
+  transition: background-color var(--transition-duration) var(--timing-function);
   &:hover,
   &:focus {
     background-color: var(--background-cos-focus);

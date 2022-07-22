@@ -16,6 +16,16 @@
   margin-bottom: 32px;
 }
 
+.advantages__item:nth-child(1):before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-size: cover;
+  margin-bottom: 16px;
+  background-image: url('../images/logo.png');
+}
+
 .advantages__text {
   margin-top: 4px;
   font-family: 'DM Sans';

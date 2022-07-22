@@ -1,0 +1,48 @@
+.mob-menu {
+    background-color: #E17992;
+    width: 100vw;
+    height: 100vh;
+}
+
+// .menu-close-icon{
+//     position: absolute;
+//     top: 20px;
+//     right: 20px;
+//     fill: white;
+// }
+
+.nav-list__item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #D9D9D9;
+
+    &:last-child {
+        border-bottom: 1px solid #D9D9D9;
+    }
+}
+
+.nav-list__link {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+
+    color: var(--background-site-main);
+    transition: color var(--transition-duration) var(--timing-function);
+
+
+    &:hover,
+    &:focus {
+        color: var(--background-logo);
+    }
+}
+
+
+.nav-list__link--current {
+    color: var(--background-logo)
+}

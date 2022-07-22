@@ -1,6 +1,11 @@
 .advantages {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 87px;
+  background-color: var(--background-site-second);
+}
+
+.advantages__list {
+  padding-right: 50px;
 }
 
 .advantages__item {
@@ -11,5 +16,12 @@
   margin-bottom: 32px;
 }
 
-.advantages__title {
+.advantages__text {
+  margin-top: 4px;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: #000000;
 }

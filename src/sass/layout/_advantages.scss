@@ -1,0 +1,12 @@
+.advantages {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.advantages__item {
+  width: 100%;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 32px;
+}

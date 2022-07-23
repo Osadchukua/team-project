@@ -1,0 +1,80 @@
+.hero{
+    padding-top: 136px;
+    padding-bottom: 158px;
+    background-color: var(--background-product1);
+    background-image: url(../images/header-ice-cream-mob.png), radial-gradient(circle, rgba(255, 165, 186, 1) 55%, rgba(255, 184, 202, 1) 55%); 
+    background-repeat: no-repeat;
+    background-position: bottom left 117px, top left 36px;
+}
+
+
+.hero-title{
+    margin-bottom: 20px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-btn1);
+    width: 218px;
+}
+
+.hero-accent{
+    font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: calc(46/48);    
+        text-transform: uppercase;
+    
+        color: #D41443;
+}
+
+.hero-btn__list{
+    display: flex;
+}
+
+.hero-btn__item:not(:last-child){
+    margin-right: 8px;
+}
+
+.hero-btn__btn--primary{
+    display: block;
+    border-radius: 20px;
+    border: none;
+    min-width: 62px;
+    height: 24px;
+    
+    background-color: #D41443;
+    
+    font-size: 8px;
+    line-height: calc(10/8);
+    color: #fff;
+   
+    
+
+}  
+
+.hero-btn__btn--secondary {
+    display: block;
+    border-radius: 20px;
+    border: none;
+    min-width: 83px;
+    height: 24px;
+    
+    background-color: #fff;
+
+    font-size: 8px;
+    line-height: calc(10/8);
+    color: #D41443;
+    transition: background-color var(--transition-duration) var(--timing-function);
+    
+        &:hover,
+        &:focus {
+            background-color: #ECEBEB;
+        }
+    
+}    
+

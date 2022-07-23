@@ -1,8 +1,15 @@
 .about {
   padding-top: 60px;
   padding-bottom: 20px;
+  @include tablet {
+    padding-bottom: 30px;
+  }
 
   background-color: var(--background-site-second);
+
+  &__container {
+    position: relative;
+  }
 
   &__label {
     font-family: 'Titan One';
@@ -24,6 +31,8 @@
     margin-bottom: 32px;
     @include tablet {
       width: 100%;
+      margin-bottom: 40px;
+
       font-size: 48px;
       line-height: calc(55 / 48);
       text-align: center;
@@ -66,7 +75,7 @@
     color: var(--color-text-first);
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.58;
+    line-height: calc(19 / 12);
     z-index: 1;
     @include tablet {
       margin-bottom: 24px;
@@ -80,7 +89,7 @@
     color: var(--color-text-second);
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.58;
+    line-height: calc(19 / 12);
     z-index: 1;
 
     @include tablet {
@@ -142,8 +151,10 @@
       margin-bottom: 0px;
     }
   }
-}
-
-.about__container {
-  position: relative;
+  &__paragraph {
+    margin-top: 18px;
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
 }

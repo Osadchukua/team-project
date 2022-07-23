@@ -1,4 +1,4 @@
-.section-about {
+.about {
   padding-top: 60px;
   padding-bottom: 20px;
 
@@ -41,7 +41,7 @@
     }
   }
 
-  &__content-additional {
+  &__content--additional {
     @include tablet {
       width: calc((100% - 32px) / 2);
     }
@@ -126,7 +126,7 @@
       width: calc((100% - 32px) / 2);
     }
   }
-  &__pic-additional {
+  &__pic--additional {
     position: absolute;
     top: 534px;
     left: 20px;
@@ -144,6 +144,6 @@
   }
 }
 
-.section-about-container {
+.about__container {
   position: relative;
 }

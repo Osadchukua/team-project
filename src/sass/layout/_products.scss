@@ -82,6 +82,12 @@
     // position: relative;   
     
     padding-bottom: 30px;
+     margin-top: 140px ;
+     &:first-child {
+      margin-top: 148px;
+     }
+
+    
   }
 
   .product__item {

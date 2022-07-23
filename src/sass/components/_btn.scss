@@ -76,6 +76,10 @@
   background-color: var(--background-btn2);
   color: var(--color-text-btn2);
   border-radius: 22px;
+  &:hover,
+  &:focus {
+    background-color: var(--background-btn2-focus);
+  }
 }
 
 // .footer__btn-icon {

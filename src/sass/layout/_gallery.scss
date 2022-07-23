@@ -10,6 +10,7 @@
     padding-right:0;
 }
 .grid-list {    
+    position: relative;
     width: 320px;
     margin: 0 auto;
     height: auto;
@@ -57,14 +58,14 @@
 .grid-item:nth-child(8){
     grid-column: 6/6;
     grid-row: 3/1;
-    align-self: center;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 12px;
 }
 .grid-item:nth-child(9){
     grid-column: 6/6;
     grid-row: 4/2;
-    align-self: center;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 13px;
 }
 .grid-item:nth-child(10){
     grid-column: 7/7;

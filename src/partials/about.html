@@ -2,17 +2,54 @@
   <div class="container">
     <p class="section-about__label about__title-pre">tradition and love</p>
     <h2 class="section-about__title about__title">how it’s made?</h2>
-    <picture>
-      <source
-        srcset="./images/about-cow-mob.png 1x, ./images/about-cow-mob-2x.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img
-        src="./images/about-cow-mob.png"
-        alt="Image with cow and milk"
-        class="section-about__pic"
-      />
-    </picture>
+    <div class="section-about__content">
+      <picture>
+        <source
+          srcset="
+            ./images/about-cow-mob.png    1x,
+            ./images/about-cow-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/about-cow-mob.png"
+          alt="Image with cow and milk"
+          class="section-about__pic"
+        />
+      </picture>
+      <div class="section-about__content-additional">
+        <ul class="section-about__list">
+          <li class="section-about__item">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </li>
+          <li class="section-about__item">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
+          </li>
+        </ul>
+        <button class="section-about__btn" type="button">
+          Read more
+          <svg
+            class="section-about__btn-icon"
+            width="7"
+            height="10"
+            role="img"
+            aria-expanded="false"
+            aria-controls="mob-menu"
+            aria-label="Read more"
+          >
+            <use
+              class="icon"
+              href="./images/icons.svg#icon-bracket-second"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <picture>
       <source
         srcset="
@@ -27,32 +64,5 @@
         class="section-about__pic-additional"
       />
     </picture>
-    <ul class="section-about__list">
-      <li class="section-about__item">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-        justo fringilla.
-      </li>
-      <li class="section-about__item">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt. Aliquam erat volutpat. Aenean accumsan.
-      </li>
-    </ul>
-    <button class="section-about__btn" type="button">
-      Read more
-      <svg
-        class="section-about__btn-icon"
-        width="14"
-        height="14"
-        role="img"
-        aria-expanded="false"
-        aria-controls="mob-menu"
-        aria-label="Read more"
-      >
-        <use class="icon" href="./images/icons.svg#icon-bracket"></use>
-      </svg>
-    </button>
   </div>
 </section>

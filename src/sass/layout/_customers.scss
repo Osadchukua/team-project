@@ -70,8 +70,20 @@
 }
 
 .swiper-pagination-bullet {
+  display: inline-block;
+  margin: 0 18px;
   width: 12px;
   height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  //   background-color: transparent;
+  //   background-image: url(../images/home-customer.png);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+}
+.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 13px;
   background-color: transparent;
   background-image: url(../images/home-customer.png);
   background-repeat: no-repeat;

@@ -1,17 +1,17 @@
 .grid-gallery {
     background-image: linear-gradient(
         to bottom,
-        #FFF5F6 20%,
-        #ffffff 80%
+        #FFF5F6 16%,
+        #ffffff 17%
     );
 }
-.grid-list {
+.grid-list {    
     width: 320px;
     margin: 0 auto;
     height: auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: minmax(44px, auto);
+    grid-auto-rows: minmax(43px, auto);
     grid-column-gap: 2.53px;
     grid-row-gap: 1.89px;
     border-radius: 8px;

@@ -17,6 +17,20 @@
           class="about__img"
         />
       </picture>
+      <picture>
+        <source
+          srcset="
+            ./images/about-milk-mob.png    1x,
+            ./images/about-milk-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/about-milk-mob.png"
+          alt="Image with cow and milk"
+          class="about__pic--additional"
+        />
+      </picture>
       <div class="about__content--additional">
         <ul class="about__list">
           <li class="about__item">
@@ -53,19 +67,5 @@
         </button>
       </div>
     </div>
-    <picture>
-      <source
-        srcset="
-          ./images/about-milk-mob.png    1x,
-          ./images/about-milk-mob-2x.png 2x
-        "
-        media="(min-width: 320px)"
-      />
-      <img
-        src="./images/about-milk-mob.png"
-        alt="Image with cow and milk"
-        class="about__pic--additional"
-      />
-    </picture>
   </div>
 </section>

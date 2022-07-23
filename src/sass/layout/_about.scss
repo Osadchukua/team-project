@@ -1,15 +1,11 @@
 .about {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 20px;
   @include tablet {
     padding-bottom: 30px;
   }
-
   background-color: var(--background-site-second);
-
-  &__container {
-    position: relative;
-  }
 
   &__label {
     font-family: 'Titan One';
@@ -20,6 +16,10 @@
       text-align: center;
       text-transform: uppercase;
       color: var(--color-title-pre);
+    }
+    @include desktop {
+      font-size: 30px;
+      line-height: calc(34 / 30);
     }
   }
 
@@ -40,6 +40,11 @@
       text-transform: uppercase;
       color: var(--color-title);
     }
+    @include desktop {
+      margin-bottom: 60px;
+      font-size: 58px;
+      line-height: calc(66 / 58);
+    }
   }
 
   &__content {
@@ -47,6 +52,10 @@
     @include tablet {
       display: flex;
       gap: 32px;
+    }
+    @include desktop {
+      align-items: center;
+      gap: 99px;
     }
   }
 
@@ -62,6 +71,9 @@
     width: 220px;
     @include tablet {
       width: 100%;
+    }
+    @include desktop {
+      width: 463px;
     }
   }
 
@@ -81,6 +93,12 @@
       margin-bottom: 24px;
       font-size: 14px;
       line-height: calc(25 / 14);
+      text-align: left;
+    }
+    @include desktop {
+      margin-bottom: 32px;
+      font-size: 16px;
+      line-height: calc(28 / 16);
     }
   }
   &__item:last-child {
@@ -97,6 +115,11 @@
       font-size: 14px;
       line-height: calc(25 / 14);
       letter-spacing: 0.04em;
+      text-align: left;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: calc(27 / 14);
     }
   }
   &__btn {
@@ -134,13 +157,24 @@
     @include tablet {
       width: calc((100% - 32px) / 2);
     }
+    @include desktop {
+      width: 501px;
+    }
   }
   &__pic--additional {
     position: absolute;
-    top: 534px;
-    left: 20px;
+    top: 594px;
+    left: 0;
+    width: 100%;
     @include tablet {
       display: none;
+    }
+    @include desktop {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 210px;
+      width: 100%;
     }
   }
   &__img {
@@ -154,7 +188,10 @@
   &__paragraph {
     margin-top: 18px;
     @include tablet {
-      margin-top: 20px;
+      margin-top: 10px;
+    }
+    @include desktop {
+      margin-top: 30px;
     }
   }
 }

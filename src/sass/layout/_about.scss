@@ -1,61 +1,78 @@
 .section-about {
   padding-top: 60px;
   padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   background-color: var(--background-site-second);
+
   &__label {
     margin-bottom: 15px;
-
-    font-family: 'Titan One';
-    font-style: normal;
-    color: var(--color-title-pre);
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 1.16;
-    text-align: center;
   }
+
   &__title {
     display: block;
-    width: 200px;
-
-    font-family: 'Titan One';
-    font-style: normal;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 32px;
-    color: var(--color-title);
-    text-transform: uppercase;
-    font-size: 34px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
   }
   &__item {
     max-width: 220px;
+    z-index: 1;
   }
   &__item:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 27px;
 
     color: var(--color-text-first);
-    font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.58;
+    z-index: 1;
   }
   &__item:last-child {
     margin-bottom: 20px;
 
     color: var(--color-text-second);
-    font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.58;
+    z-index: 1;
   }
   &__btn {
     width: 176px;
     height: 44px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
     border-radius: 22px;
     border-style: none;
+    background-color: var(--background-btn2);
+    color: var(--color-text-btn2);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    &:hover,
+    &:focus {
+      background-color: var(--background-btn2-focus);
+    }
   }
+  &__btn-icon {
+    margin-left: 14px;
+    fill: var(--background-btn1);
+  }
+  &__pic {
+    margin-bottom: 40px;
+  }
+  &__pic-additional {
+    position: absolute;
+    top: 534px;
+    left: 20px;
+  }
+}
+.container {
+  position: relative;
 }

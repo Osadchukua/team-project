@@ -1,7 +1,7 @@
-.products {
-    background-color:  white;
-  }
-.container {}
+// .products {
+//     background-color:  white;
+//   }
+
 
 .products__lable {
   color: var(--color-title-pre);
@@ -17,18 +17,13 @@
 .products__title {
   margin-bottom: 148px;
 }
-
-  .product__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
   
   .product__item {
-
-    position: relative;
     width: 100%;
+    // height: 489px;
      border-radius: 24px;
+     margin-top: 140px;
+     padding-top: 160px;
     // background-color: var(--background-product1);
 
     &.cream__cards {
@@ -47,75 +42,76 @@
   }}
 
 
+  .product__item::before {
+ 
+    display: block;
+    content: "";
+    position: absolute;
+    top: 85px;
+    width: 280px;
+    height: 280px;
+    // background-image: 
+    // url("../images/products-ice-cream-mob-2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;}
 
-//   @media screen and (min-width: 768px) {
-//     .staff__item {
-//       width: calc((100% - 30px) / 2);
-//     }
-//   }
-//   @media screen and (min-width: 768px) and (min-width: 1200px) {
-//     .staff__item {
-//       max-width: calc((100% - 90px) / 4);
-//     }
-//   }
+      // .product__item.milkshakes__cards::before {
+ 
+      //   display: block;
+      //   content: "";
+      //   position: absolute;
+      //   top: 85px;
+      //   width: 280px;
+      //   height: 280px;
+      //   background-image: 
+      //   url("../images/products-ice-cream-mob-2x.png");
+      //   background-size: contain;
+      //   background-repeat: no-repeat;}
 
 
-// .product__item::before {
-//   display: block;
-//   margin: 0 auto;
-//   content: "";
-//   position: absolute;
-//   // z-index: -1;
-//   top: -140px;
-//   // left: 35%;
-//   width: 280px;
-//   height: 280px;
-//   background-image: 
-//   url("../images/products-ice-cream-mob-2x.png");
-//   background-size: contain;
-//   background-repeat: no-repeat;
-// }
+
+
+  .product__item.cream__cards::before {
+    background-image: 
+    url("../images/products-ice-cream-mob-2x.png");
+
+  }
+
+.product__item.coffee__cards::before {
+  background-image: 
+  url("../images/products-coffee-mob-2x.png");
+
+}
+
+.product__item.milkshakes__cards::before{
+  background-image: 
+  url("../images/products-milkshake-mob-2x.png");
+}
+
 
 
   
   .product__item {
-    // position: relative;   
-    
     padding-bottom: 30px;
      margin-top: 140px ;
      &:first-child {
       margin-top: 148px;
      }
-
+    }
     
-  }
+  
 
-  .product__item {
-
-  }
-
-  // .products__title-cards {
-  //   margin-top: 140px;
-  // }
-
-  .products__title-cards {
-       margin-top: 160px;
-      }
-
-
-
-
-  .products__title-cards::before {
-    content: "";
-    position: absolute;
-    // z-index: -1;
-    top: -28%;
-    left: 0;
-    width: 280px;
-    height: 280px;
-    background-image: url("../images/products-ice-cream-mob-2x.png");
-    background-size: contain;
-    background-repeat: no-repeat;}
+  // .products__title-cards::before {
+  //   content: "";
+  //   position: absolute;
+  //   // z-index: -1;
+  //   top: -28%;
+  //   left: 0;
+  //   width: 280px;
+  //   height: 280px;
+  //   background-image: url("../images/products-ice-cream-mob-2x.png");
+  //   background-size: contain;
+  //   background-repeat: no-repeat;}
 
     // .cream__cards {
     //   background-image: 
@@ -137,10 +133,6 @@
     display: block;
     margin: 32 auto;
     content: "";
-    // position: absolute;
-    // z-index: -1;
-    // top: -3rem;
-    // left: -50%;
     width: 26px;
     height: 6px;
     background-image: url("../images/product-tripledots.png");
@@ -149,29 +141,10 @@
     background-repeat: no-repeat;
 }
 
-  // .rrr::after {
-  //   content: " ";
-  //   position: absolute;
-  //   left: 50px;
-  //   top: 50px;
-  //   width: 26px;
-  //   height: 6px;
-  //   color: white;
-  
-  //   background-image: url("../../images/about-milk-mob.png");
-  
-  //   background-size: 100px 100px;
-  // }
-
-
-  
-
-  
   .product__description {
-
     margin-bottom: 32px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 42px;
+    padding-left: 42px;
     font-family: 'DM Sans';
     color: var(--color-title-products);
     font-size: 14px;
@@ -181,17 +154,11 @@
     
   }
 
-
   .section-products__btn {
     margin: 0 auto;
     display: block;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     width: 40px;
     height: 40px;
-
-    // margin-bottom: 40px;
     border-radius: 50%;
     border: none;
     background-color: var(--background-btn2);

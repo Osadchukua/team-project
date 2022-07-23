@@ -1,0 +1,27 @@
+.footer {
+    padding-top: 32px;
+    padding-bottom: 3px;
+    background: var(--background-site-second);
+}
+
+.footer__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(22 / 18);
+  text-align: right;
+  color: var(--color-text-first);
+}
+.footer__text-tel {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  text-align: right;
+  color: var(--color-text-focus);
+}
+.footer__text--copyright {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  text-align: center;
+  color:  var(--color-text-second);
+}

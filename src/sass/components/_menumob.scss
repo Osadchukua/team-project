@@ -1,15 +1,27 @@
 
 .mob-menu {
+    position: fixed;
     background-color: #E17992;
     width: 100vw;
     height: 100vh;
     padding-top: 58px;
+    z-index: 2;
+    opacity: 1;
+
+}
+
+.mob-menu.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .menu-close-btn{
     position: absolute;
     top: 20px;
     right: 20px;
+    border: none;
+    background-color: transparent;
 }
 
 .buy-btn{

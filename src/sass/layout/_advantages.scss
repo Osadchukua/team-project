@@ -41,9 +41,9 @@
   &:nth-child(3):before {
     width: 44px;
     background-image: url('../images/advantages-heart-mob.png');
-  }
-  @include retina {
-    background-image: url('../images/advantages-heart-mob-2x.png');
+    @include retina {
+      background-image: url('../images/advantages-heart-mob-2x.png');
+    }
   }
 }
 

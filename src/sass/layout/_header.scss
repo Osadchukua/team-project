@@ -18,4 +18,13 @@
     top: 27px;
     right: 20px;
     background-color: transparent;
+    color: black;
+
+}
+
+.menu-open-icon{
+fill: currentColor;
+    &:hover{
+        fill: green;
+    }
 }

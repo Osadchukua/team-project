@@ -6,9 +6,9 @@
     padding-top: 60px;
     background-image: 
     linear-gradient(
-    to bottom 
-    #E5E5E5 40%
-    #FFF5F6 40%
+    to bottom,
+    #ffffff 25%,
+    #FFF5F6 75%
     );
 }
 
@@ -134,53 +134,53 @@
 
     &:hover,
     &:focus {
-        color: #FFA5BA;
+        color: #D41443;
     }
 }
 
-.contact-button {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-}
+// .contact-button {
+//     display: flex;
+//     flex-direction: column;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
 
-.contact-button__locations {
-    margin-bottom: 10px;
+// .contact-button__locations {
+//     margin-bottom: 10px;
 
-    width: 161px;
-    height: 44px;
+//     width: 161px;
+//     height: 44px;
 
-    background-color: #D41342;
-    border-radius: 22px;
-    border: none;
-    cursor: pointer;
-}
+//     background-color: #D41342;
+//     border-radius: 22px;
+//     border: none;
+//     cursor: pointer;
+// }
 
-.contact-button__loctext{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
+// .contact-button__loctext{
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 21px;
+//     text-align: center;
 
-    color: #FFFFFF;
-}
+//     color: #FFFFFF;
+// }
 
-.contact-button__franchise {
-    width: 161px;
-    height: 44px;
+// .contact-button__franchise {
+//     width: 161px;
+//     height: 44px;
 
-    background-color: #FFFFFF;
-    border-radius: 22px;
-    border: none;
-    cursor: pointer;
-}
+//     background-color: #FFFFFF;
+//     border-radius: 22px;
+//     border: none;
+//     cursor: pointer;
+// }
 
-.contact-button__franchise {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
+// .contact-button__franchise {
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 21px;
+//     text-align: center;
 
-    color: #D41443;
-}
+//     color: #D41443;
+// }

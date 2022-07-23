@@ -79,5 +79,11 @@
 <symbol id="icon-bracket-second2" viewBox="0 0 26 32">
 <path fill="none" stroke="#ffffff" style="stroke: var(--color1, #ffffff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.826 12.8-16.826 12.8"></path>
 </symbol>
+<symbol id="icon-open-mob-menu-1-var" viewBox="0 0 46 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color2, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
+</symbol>
+<symbol id="icon-bracket-second" viewBox="0 0 26 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color2, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.826 12.8-16.826 12.8"></path>
+</symbol>
 </defs>
 </svg>

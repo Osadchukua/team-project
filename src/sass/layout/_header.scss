@@ -1,16 +1,19 @@
 .page-header {
-    position: relative;
-    padding-top: 8px;
+    // position: relative;
+    // padding-top: 8px;
     background-color: var(--background-product1);
-    height: 502px;
+   
 }
 
+
 .page-header .container{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-between;
+    // position: relative;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 8px;
 }
 
 .menu-open-btn{
@@ -18,13 +21,9 @@
     top: 27px;
     right: 20px;
     background-color: transparent;
-    color: black;
-
 }
 
-.menu-open-icon{
-fill: currentColor;
-    &:hover{
-        fill: green;
-    }
+.menu-mob.is-hidden .menu-close-btn {
+    display: none;
 }
+

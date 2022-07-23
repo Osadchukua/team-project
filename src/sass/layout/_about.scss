@@ -5,7 +5,7 @@
   background-color: var(--background-site-second);
 
   &__label {
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
   }
 
   &__title {
@@ -15,9 +15,26 @@
     margin-right: auto;
     margin-bottom: 32px;
   }
+
+  &__content {
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__list {
+    z-index: 1;
+    position: relative;
+  }
+
   &__item {
+    display: block;
     max-width: 220px;
     z-index: 1;
+    @include tablet {
+      width: 336px;
+      // width: 100%;
+    }
   }
   &__item:not(:last-child) {
     margin-bottom: 27px;
@@ -66,6 +83,9 @@
   }
   &__pic {
     margin-bottom: 40px;
+    @include tablet {
+      width: 336px;
+    }
   }
   &__pic-additional {
     position: absolute;

@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   // freeMode: true,
   autoplay: {
-    delay: 2000,
+    delay: 3000,
     stopOnLastSlide: true,
     disableOnInteraction: false,
   },
@@ -10,13 +10,12 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    // type: 'bulets',
     clickable: true,
     dynamicBullets: true,
   },
 
-  mousewheel: {
-    sensitivity: 1,
-    eventsTarget: '.swiper',
-  },
+  //   mousewheel: {
+  //     sensitivity: 1,
+  //     eventsTarget: '.swiper',
+  //   },
 });

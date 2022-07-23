@@ -62,5 +62,8 @@
 <symbol id="icon-bracket-second" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.826 12.8-16.826 12.8"></path>
 </symbol>
+<symbol id="icon-bracket-second2" viewBox="0 0 26 32">
+<path fill="none" stroke="#ffffff" style="stroke: var(--color1, #ffffff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.826 12.8-16.826 12.8"></path>
+</symbol>
 </defs>
 </svg>

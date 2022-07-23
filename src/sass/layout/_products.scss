@@ -3,33 +3,21 @@
   }
 .container {}
 
-.pretitle {
-
-margin-bottom: 15px;
-color: var(--color-title-pre);
-font-family: 'Titan One';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-
+.products__lable {
+  color: var(--color-title-pre);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: Titan One;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.16;
 }
 
-.title {
-margin-bottom: 8px;
-color: var(--color-title);
-font-family: 'Titan One';
-font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.04em;
+.products__title {
+  margin-bottom: 148px;
 }
 
- 
   .product__list {
     display: flex;
     flex-wrap: wrap;
@@ -37,11 +25,29 @@ letter-spacing: 0.04em;
   }
   
   .product__item {
+
+    position: relative;
     width: 100%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 24px;
-    background-color: var(--background-product1);
+     border-radius: 24px;
+    // background-color: var(--background-product1);
+
+    &.cream__cards {
+      background-color: var(--background-product1);
+  
+    }
+  
+  &.coffee__cards {
+    background-color: var(--background-product2);
+
   }
+
+  &.milkshakes__cards {
+    background-color: var(--background-product3);
+
+  }}
+
+
+
 //   @media screen and (min-width: 768px) {
 //     .staff__item {
 //       width: calc((100% - 30px) / 2);
@@ -52,33 +58,149 @@ letter-spacing: 0.04em;
 //       max-width: calc((100% - 90px) / 4);
 //     }
 //   }
+
+
+// .product__item::before {
+//   display: block;
+//   margin: 0 auto;
+//   content: "";
+//   position: absolute;
+//   // z-index: -1;
+//   top: -140px;
+//   // left: 35%;
+//   width: 280px;
+//   height: 280px;
+//   background-image: 
+//   url("../images/products-ice-cream-mob-2x.png");
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+
+
   
-  .product__card {
-   
-    padding-top: 30px;
+  .product__item {
+    // position: relative;   
+    
     padding-bottom: 30px;
+     margin-top: 140px ;
+     &:first-child {
+      margin-top: 148px;
+     }
+
+    
   }
+
+  .product__item {
+
+  }
+
+  // .products__title-cards {
+  //   margin-top: 140px;
+  // }
+
+  .products__title-cards {
+       margin-top: 160px;
+      }
+
+
+
+
+  .products__title-cards::before {
+    content: "";
+    position: absolute;
+    // z-index: -1;
+    top: -28%;
+    left: 0;
+    width: 280px;
+    height: 280px;
+    background-image: url("../images/products-ice-cream-mob-2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;}
+
+    // .cream__cards {
+    //   background-image: 
+    //   url("../images/products-ice-cream-mob-2x.png");
+    // }
+    // .coffee__cards{
+    //   background-image: 
+    //   url("../images/products-coffee-mob-2x.png");
+    // }
+    // .milkshakes__cards{
+    //   background-image: 
+    //   url("../images/products-milkshake-mob-2x.png");
+    // }
+
+
+
+
+  .products__title-cards::after {
+    display: block;
+    margin: 32 auto;
+    content: "";
+    // position: absolute;
+    // z-index: -1;
+    // top: -3rem;
+    // left: -50%;
+    width: 26px;
+    height: 6px;
+    background-image: url("../images/product-tripledots.png");
+       filter: drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  // .rrr::after {
+  //   content: " ";
+  //   position: absolute;
+  //   left: 50px;
+  //   top: 50px;
+  //   width: 26px;
+  //   height: 6px;
+  //   color: white;
   
-  .product__name {
-    margin-bottom: 32px;
-color: var(--color-title-products);
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
-  }
+  //   background-image: url("../../images/about-milk-mob.png");
+  
+  //   background-size: 100px 100px;
+  // }
+
+
+  
+
   
   .product__description {
+
     margin-bottom: 32px;
-    color: var(--color-title-products);
+    padding-right: 40px;
+    padding-left: 40px;
     font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
+    color: var(--color-title-products);
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
+    
+  }
+
+
+  .section-products__btn {
+    margin: 0 auto;
+    display: block;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 40px;
+    height: 40px;
+
+    // margin-bottom: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--background-btn2);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+
+  .products__btn-icon {
+    margin: 0 auto;
+    display: block;
+    fill: var(--background-btn1);
   }

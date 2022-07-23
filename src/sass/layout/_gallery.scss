@@ -55,14 +55,20 @@
     grid-column: 6/6;
     grid-row: 3/1;
     align-self: center;
+    margin-bottom: 20px;
 }
 .grid-item:nth-child(9){
     grid-column: 6/6;
     grid-row: 4/2;
     align-self: center;
+    margin-bottom: 20px;
 }
 .grid-item:nth-child(10){
     grid-column: 7/7;
     grid-row: 1/4;
     align-self: center;
+}
+.container{
+    padding-left: 0;
+    padding-right:0;
 }

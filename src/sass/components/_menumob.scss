@@ -1,3 +1,7 @@
+body.no-scroll{
+   overflow: hidden;
+}
+
 
 .mob-menu {
     position: absolute;
@@ -7,6 +11,10 @@
     padding-top: 58px;
     z-index: 2;
     opacity: 1;
+    overflow-y: scroll;
+    transform: translateX(0);
+    transition: transform 1000ms var(--timing-function);
+  
 
 }
 
@@ -14,8 +22,9 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transform: translateX(100%);
     display: none;
-    // transform: translate();
+   
 }
 
 .menu-close-btn{

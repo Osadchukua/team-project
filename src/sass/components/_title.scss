@@ -4,6 +4,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-title-pre-heder);
+  @include tablet {
+    font-size: 22px;
+    line-height: calc(25 / 22);
+  }
+  @include desktop {
+    font-size: 38px;
+    line-height: calc(44 / 38);
+  }
 }
 
 .header__title {
@@ -11,6 +19,15 @@
   line-height: calc(46 / 48);
   text-transform: uppercase;
   color: var(--color-title);
+  @include tablet {
+    font-size: 34px;
+    line-height: calc(31 / 34);
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(52 / 58);
+  }
 }
 
 .products__title-pre {
@@ -19,6 +36,15 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-title-pre);
+  @include tablet {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    letter-spacing: 0.04em;
+  }
 }
 
 .products__title {
@@ -28,6 +54,15 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-title);
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
+  }
 }
 
 .products__title-cards {
@@ -37,6 +72,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-title-products);
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
 }
 
 .about__title-pre {
@@ -45,6 +84,15 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--color-title-pre);
+  @include tablet {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    letter-spacing: 0.04em;
+  }
 }
 
 .about__title {
@@ -55,6 +103,15 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-title);
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
+  }
 }
 
 .advantages__title {
@@ -71,6 +128,10 @@
     line-height: calc(55 / 48);
     text-transform: none;
   }
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+  }
 }
 
 .footer__title-pre {
@@ -79,6 +140,15 @@
   text-transform: uppercase;
   color: var(--color-title-pre);
   margin-bottom: 16px;
+  @include tablet {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
 }
 
 .footer__title {
@@ -87,4 +157,13 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-title);
+  @include tablet {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    letter-spacing: 0.06em;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+  }
 }

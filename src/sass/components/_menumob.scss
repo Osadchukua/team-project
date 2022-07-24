@@ -13,8 +13,7 @@ body.no-scroll{
     opacity: 1;
     overflow-y: scroll;
     transform: translateX(0);
-    transition: transform 1000ms var(--timing-function);
-  
+    transition: transform var(--transition-duration) var(--timing-function);
 
 }
 
@@ -24,7 +23,7 @@ body.no-scroll{
     visibility: hidden;
     transform: translateX(100%);
     display: none;
-   
+    transition: transform var(--transition-duration) var(--timing-function);
 }
 
 .menu-close-btn{
@@ -74,10 +73,10 @@ body.no-scroll{
 .nav-list__item {
     padding-top: 12px;
     padding-bottom: 12px;
-    border-top: 1px solid #D9D9D9;
+    border-top: 1px solid #E18298;
 
     &:last-child {
-        border-bottom: 1px solid #D9D9D9;
+        border-bottom: 1px solid #E18298;
     }
 }
 

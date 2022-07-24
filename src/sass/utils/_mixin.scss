@@ -7,7 +7,7 @@
   }
 }
 @mixin tablet {
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }

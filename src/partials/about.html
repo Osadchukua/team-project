@@ -17,7 +17,7 @@
           class="about__img"
         />
       </picture>
-      <picture>
+      <picture class="about__pic--additional">
         <source
           srcset="
             ./images/about-milk-mob.png    1x,
@@ -28,32 +28,28 @@
         <img
           src="./images/about-milk-mob.png"
           alt="Image with cow and milk"
-          class="about__pic--additional"
+          class="about__img--additional"
         />
       </picture>
       <div class="about__content--additional">
-        <ul class="about__list">
-          <li class="about__item">
-            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-            erat at justo fringilla.
-          </li>
-          <li class="about__item">
+        <p class="about__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.<span id="dots">..</span>
+        </p>
+        <ul id="more">
+          <li class="about__text--additional">
             Curabitur lacinia enim at ex blandit, vel pellentesque odio
             elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
             euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
             massa nibh, tincidunt.
-            <p class="about__paragraph">
-              Aliquam erat volutpat. Aenean accumsan.
-            </p>
+          </li>
+          <li class="about__paragraph">
+            Aliquam erat volutpat. Aenean accumsan.
           </li>
         </ul>
-        <button
-          class="about__btn"
-          type="button"
-          aria-label="Read more"
-          data-modal-open
-        >
+
+        <button class="about__btn" onclick="myFunction()" id="myBtn">
           Read more
           <svg
             class="about__btn-icon"

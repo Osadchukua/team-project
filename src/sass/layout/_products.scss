@@ -42,6 +42,60 @@
 
   }}
 
+  @media screen and (min-width: 772px) {
+    .product__item {
+
+      width: calc((100% - 32px) / 3);
+    }
+  }
+
+  @media screen and (min-width: 772px) and (min-width: 1200px) {
+    
+    .products { 
+      padding: 60 0;
+    }
+    
+    .products__lable {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+
+    .products__title {
+      font-size: 58px;
+      margin-bottom: 20px;
+    }
+
+    .product__item:before {
+      content: "";
+      width: 368px;
+      height: 394px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      position: absolute;
+      top: -240px;
+      left: 47px;}
+
+      .product__item:nth-child(1)::before 
+      // {
+
+    //     background-image: 
+    // url("../images/products-ice-cream-desktop.png");}
+    
+    .product__list {
+      display: flex;
+    }
+    .product__item {
+      max-width: calc((100% - 64px) / 3);
+      margin-left: 32px;
+    }
+
+    .product__item:first-child {
+      margin-left: 0px;
+    }
+
+  }
+
 
   .product__item::before {
  
@@ -60,7 +114,17 @@
     .product__item:nth-child(1)::before {
 
         background-image: 
+    url("../images/products-ice-cream-mob.png");
+
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+
+    .
+    background-image: 
     url("../images/products-ice-cream-mob-2x.png");
+
+  }
 
   }
 

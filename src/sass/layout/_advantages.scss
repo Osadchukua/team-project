@@ -2,17 +2,32 @@
   padding-top: 20px;
   padding-bottom: 80px;
   background-color: var(--background-site-second);
+  @include tablet {
+    padding-bottom: 251px;
+  }
 
   &__list {
     padding-right: 50px;
+    @include tablet {
+      display: flex;
+      gap: 19px;
+      padding-right: 0;
+    }
   }
 }
 
 .advantages__item {
   width: 100%;
+  @include tablet {
+    width: 165px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 32px;
+    @include tablet {
+      margin-bottom: 0;
+      margin-right: 19px;
+    }
   }
 
   &::before {
@@ -22,6 +37,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 16px;
+    @include tablet {
+      margin-bottom: 36px;
+    }
   }
 
   &:nth-child(1):before {
@@ -54,4 +72,9 @@
   line-height: 1.7;
 
   color: #000000;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.74;
+  }
 }

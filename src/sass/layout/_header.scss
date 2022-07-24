@@ -26,14 +26,13 @@
 
     @include tablet{
         display: block;
-            min-width: 160px;
-            height: 44px;
-            
-            border: 1px solid transparent;
-            border-radius: 22px;
-            background-color: var(--background-btn2);
-            font-size: inherit;
-            font-style: normal;
+        min-width: 160px;
+        height: 44px;  
+        border: 1px solid transparent;
+        border-radius: 22px;
+        background-color: var(--background-btn2);
+        font-size: inherit;
+        font-style: normal;
             font-weight: 700;
             font-size: 16px;
             line-height: 1.31;

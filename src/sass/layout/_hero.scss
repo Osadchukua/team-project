@@ -12,7 +12,13 @@
         (min-resolution: 2dppx){
         background-image: url(../images/header-ice-cream-mob.png), radial-gradient(circle, rgba(255, 165, 186, 1) 55%, rgba(255, 184, 202, 1) 55%);
         }
-}
+
+    @include tablet{
+        background-position: bottom left 322px, bottom 75px left 36px;
+    }       
+    }
+
+
 
 .hero .container{
     margin-left: 0;

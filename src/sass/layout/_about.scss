@@ -1,10 +1,5 @@
 .about {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  @include tablet {
-    padding-bottom: 30px;
-  }
   background-color: var(--background-site-second);
 
   &__label {

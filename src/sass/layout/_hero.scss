@@ -10,19 +10,29 @@
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
-        background-image: url(../images/header-ice-cream-mob.png), radial-gradient(circle, rgba(255, 165, 186, 1) 55%, rgba(255, 184, 202, 1) 55%);
+        background-image: url(../images/header-ice-cream-mob-2x.png), radial-gradient(circle, rgba(255, 165, 186, 1) 55%, rgba(255, 184, 202, 1) 55%);
         }
 
     @include tablet{
-        background-position: bottom left 322px, bottom 75px left 36px;
+        padding-top: 102px;
+        padding-bottom: 40px;
+        background-image: url(../images/header-milk-tab.png),url(../images/header-ice-cream-tab.png),url(../images/header-girl-tab.png),radial-gradient(circle, rgba(255, 165, 186, 1) 38%, rgba(255, 184, 202, 1) 38%); 
+        background-position: bottom 16px left 32px, bottom left 322px,
+            right 32px bottom 1px, bottom 20px left 5px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/header-milk-tab-2x.png),url(../images/header-ice-cream-tab-2x.png), radial-gradient(circle, rgba(255, 165, 186, 1) 43%, rgba(255, 184, 202, 1) 43%),url(../images/header-girl-tab-2x.png);
+            }
     }       
     }
 
 
 
 .hero .container{
-    margin-left: 0;
-    margin-right: 0;
+    // margin-left: 0;
+    // margin-right: 0;
 }
 
 .hero-title{
@@ -36,6 +46,12 @@
     text-transform: uppercase;
     color: var(--color-text-btn1);
     width: 218px;
+
+    @include tablet{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: calc(25/22);
+    }
 }
 
 .hero-accent{
@@ -47,6 +63,14 @@
         text-transform: uppercase;
     
         color: #D41443;
+
+        @include tablet{
+            
+            font-size: 34px;
+            line-height: calc(31/34); 
+            letter-spacing: 0.04em;
+        
+        }
 }
 
 .hero-btn__list{
@@ -94,4 +118,37 @@
         }
     
 }    
+
+
+.hero-description{
+    display: none;
+
+    @include tablet{
+        display: block;
+        margin-top: 61px;
+        margin-left: 152px;
+        margin-right: 0;
+        width: 114px;
+    }
+}
+
+.hero-description__text{
+    margin-bottom: 7px;
+    font-size: 8px;
+    line-height: calc(12/8);    
+    color: #FFFFFF;
+}
+
+.hero-description__btn{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    align-items: center;
+    background-color: var(--background-btn2);
+}
+
+.hero-description__icon{
+    fill: var(--background-btn1);
+}
+
 

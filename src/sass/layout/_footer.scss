@@ -51,9 +51,11 @@
   flex-direction: column;
   align-items: flex-end;
   margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0px;
+  }
   @include desktop {
     width: 100%;
-    margin-bottom: 0px;
   }
 }
 

@@ -1,5 +1,7 @@
 .page-header {
-    // position: absolute;
+   position: fixed;
+   width: 100%;
+   z-index: 3;
     background-color: var(--background-product1);
    
     @include tablet{
@@ -11,6 +13,7 @@
 
 
 .page-header .container{
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
     padding-top: 8px;
@@ -18,6 +21,7 @@
     @include tablet{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-top: 32px;
     }
 }
@@ -37,6 +41,7 @@
         border: 1px solid transparent;
         border-radius: 22px;
         background-color: var(--background-btn2);
+        
         font-size: inherit;
         font-style: normal;
             font-weight: 700;
@@ -63,10 +68,53 @@
     top: 46px;
     right: 224px;
     }
+
+    @include desktop{
+    display: none;
+    }
 }
 
 .menu-mob.is-hidden .menu-close-btn {
     display: none;
 }
 
+.main-nav-list{
+    display: none;
+
+    @include desktop{
+    display: flex;
+    align-items: center;
+    }
+}
+
+
+    .main-nav-list__item {
+            margin-right: 35px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+.main-nav-list__link{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21/16);
+    color: var(--background-site-main);
+    transition: color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+            color: var(--background-logo);
+        }
+    }
+    
+        
+        
+    
+    .main-nav-list__link--current {
+        color: var(--background-logo)
+    }
 

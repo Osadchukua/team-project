@@ -1,7 +1,7 @@
 
-// body .no-scroll{
-//    overflow: hidden;
-// }
+body .no-scroll{
+   overflow: hidden;
+}
 
 
 .menu-mob.is-hidden {
@@ -19,7 +19,7 @@
     width: 100vw;
     height: 100vh;
     padding-top: 58px;
-    z-index: 2;
+    z-index: 5;
     opacity: 1;
     visibility: visible;
     overflow-y: scroll;

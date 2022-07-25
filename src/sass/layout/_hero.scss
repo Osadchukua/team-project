@@ -1,5 +1,5 @@
 .hero{
-    padding-top: 136px;
+    padding-top: 198px;
     padding-bottom: 158px;
     background-color: var(--background-product1);
     background-image: url(../images/header-ice-cream-mob.png), radial-gradient(ellipse, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%); 
@@ -25,11 +25,33 @@
             }
 
         }
+    
+    @include desktop{
+        padding-top: 147px;
+        padding-bottom: 84px;
+          
+        
+            background-image: url(../images/header-milk-desktop.png),
+                url(../images/header-ice-cream-desktop.png),
+                url(../images/header-girl-desktop.png),
+                radial-gradient(circle, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%);
+                background-position: bottom 60px left 16px,
+                bottom left 636px,
+                right 16px bottom,
+                top 54px right 149px;
+                background-size: 213px 216px,
+                236px 557px,
+                304px 241px,
+                534px 534px;
 
+                @include retina {
+                        background-image: url(../images/header-milk-desktop-2x.png), url(../images/header-ice-cream-desktop-2x.png), url(../images/header-girl-desktop-2x.png), radial-gradient(circle, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%);
+                    }
+    }
+                
        
     }       
        
-
 
 .hero-thumb{
     display: flex;
@@ -54,6 +76,17 @@
         font-size: 22px;
         line-height: calc(25/22);
     }
+
+    @include desktop{
+        width: 277px;
+        margin-bottom: 24px;
+        padding-top: 0;
+            font-size: 38px;
+            line-height: calc(44/38);
+            
+
+    }
+    
 }
 
 .hero-accent{
@@ -72,6 +105,11 @@
             line-height: calc(31/34); 
             letter-spacing: 0.04em;
         
+        }
+
+        @include desktop{
+            font-size: 58px;
+            line-height: calc(52/58);
         }
 }
 
@@ -95,6 +133,13 @@
     font-size: 8px;
     line-height: calc(10/8);
     color: #fff;
+
+    @include desktop{
+        min-width: 107px;
+        height: 40px;
+        font-size: 14px;
+        line-height: calc(18/14);
+    }
    
     
 
@@ -118,6 +163,13 @@
         &:focus {
             background-color: #ECEBEB;
         }
+     
+                @include desktop {
+                    min-width: 138px;
+                    height: 40px;
+                    font-size: 14px;
+                    line-height: calc(18/14);
+                }
     
 }    
 
@@ -132,6 +184,12 @@
         margin-right: 0;
         width: 114px;
     }
+
+    @include desktop{
+        margin-top: 108px;
+        margin-left: 213px;
+        width: 200px;
+    }
 }
 
 .hero-description__text{
@@ -139,6 +197,13 @@
     font-size: 8px;
     line-height: calc(12/8);    
     color: #FFFFFF;
+
+    @include desktop{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: calc(20/14);
+           
+    }
 }
 
 .hero-description__btn{
@@ -147,6 +212,13 @@
     border-radius: 50%;
     align-items: center;
     background-color: var(--background-btn2);
+
+    @include desktop{
+    width: 26px;
+    height: 26px;
+    }
+    
+
 }
 
 .hero-description__icon{
@@ -160,11 +232,16 @@
     display: flex;
     flex-direction: column;
     }
+
+    @include desktop{
+        padding-top: 9px;
+    }
     
     
 }
 .hero-benefits__list{
     max-width: 92px; 
+    
 
 
 }
@@ -174,17 +251,17 @@
     margin-bottom: 16px;
     z-index: 1;
 
-    &:first-child .hero-benefits__number{
-        text-align: left;
-    }
+//     &:first-child .hero-benefits__number{
+//         text-align: left;
+//     }
 
-    &:last-child{
-        margin-bottom: 0;
-    }
+//     &:last-child{
+//         margin-bottom: 0;
+//     }
 
-    &:last-child .hero-benefits__text {
-            text-align: left;
-        }
+//     &:last-child .hero-benefits__text {
+//             text-align: left;
+//         }
 }
 
 
@@ -198,7 +275,11 @@
     border-radius: 50%;
     background-color: #fff;
     z-index: -1;
-    
+
+    @include desktop{
+        width: 30px;
+        height: 30px;
+    }
     
 }
 
@@ -214,14 +295,17 @@
         color: var(--background-logo);
     
     @include desktop{
+        margin-bottom: 2px;
         font-size: 46px;
         line-height: calc(53/46);
     }
+
 }
+
 
 .hero-benefits__text {
     font-size: 8px;
-        line-height: calc(10/8);
+    line-height: calc(10/8);
     text-align: center;
 
     color: var(--background-site-main);

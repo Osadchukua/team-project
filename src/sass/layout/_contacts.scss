@@ -3,7 +3,7 @@
 }
 
 .contacts {
-    padding-top: 60px;
+    // padding-top: 60px;
     background-image: 
     linear-gradient(
     to bottom,
@@ -13,7 +13,7 @@
 }
 
 .contacts-list {
-    @media screen and (min-width: 768px) {
+    @include tablet {
         display: flex;
         flex-wrap: nowrap;
         margin: -16px;
@@ -29,13 +29,13 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
         &:not(:last-child) {
             margin-bottom: 20px;
         } 
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin: 16px;
         height: calc(100% - 2 * 40px);
         width: calc(100% - 32px * 3);
@@ -63,7 +63,7 @@
     height: 16px;
     background-color: var(--background-product2);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-bottom: 32px;
         width: 73px;
         height: 28px;
@@ -77,7 +77,7 @@
     width: 130px;
     height: 16px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-bottom: 32px;
         width: 138px;
         height: 28px;
@@ -98,7 +98,7 @@
     padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -115,21 +115,19 @@
 
     color: var(--color-text-first);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         font-size: 14px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 16px;
     }
 }
 
 .contacts-location__city {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 8px;
-    }
+    margin-bottom: 8px;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 12px;
     }
 
@@ -145,12 +143,12 @@
     
     color: var(--color-text-second);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         font-size: 14px;
         line-height: 1.66;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 16px;
         line-height: 1.83;
     }
@@ -161,7 +159,7 @@
         margin-bottom: 8px;
     }
 
-    @media screen and (min-width: 768px){
+    @include tablet {
         margin-bottom: 12px;
     }
 }
@@ -173,11 +171,11 @@
 
     color: var(--color-text-time);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         font-size: 14px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 16px;
     }
 }
@@ -185,7 +183,7 @@
 .contacts-options {
     padding-top: 24px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         padding-top: 32px;
     }
 }
@@ -199,12 +197,12 @@
     cursor: pointer;
     transition: color var(--transition-duration) var(--timing-function);
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         font-size: 14px;
         line-height: 1.83;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 16px;
     }
 
@@ -221,7 +219,7 @@
     justify-content: center;
     margin-top: 32px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         flex-wrap: nowrap;
         flex-direction: row;
         align-items: baseline;
@@ -232,12 +230,12 @@
 .contacts__btn {
     margin-bottom: 10px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-bottom: 0;
         margin-right: 15px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin-left: 12px;
     }
 }
@@ -246,7 +244,7 @@
     margin-left: 5px;
     fill: #ffffff;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-left: 14px;
     }
 }

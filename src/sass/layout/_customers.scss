@@ -5,6 +5,9 @@
   @include tablet {
     padding: 0 74px;
   }
+  @include desktop {
+    padding: 0 116px;
+  }
 }
 .reviews-slider__list {
   margin-bottom: 16px;
@@ -19,6 +22,8 @@
 }
 .customer-reviews__imgs {
   margin-bottom: 30px;
+  // border-radius: 50%;
+  // height: 85px;
   @include tablet {
     margin-bottom: 20px;
   }
@@ -31,7 +36,6 @@
   z-index: -1;
 
   @include tablet {
-    margin-bottom: 4px;
     padding: 37px 50px 44px 50px;
   }
 }
@@ -56,6 +60,17 @@
     font-size: 14px;
     line-height: 2.16;
     letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.86;
+    background: repeating-linear-gradient(
+      to bottom,
+      #fafafa,
+      #fafafa 28px,
+      #e1e1e1 28px,
+      #e1e1e1 29px
+    );
   }
 }
 .customer-reviews__feedback:before {
@@ -87,6 +102,9 @@
   @include tablet {
     font-size: 16px;
   }
+  @include desktop {
+    font-size: 20px;
+  }
   &:before {
     content: '';
     display: block;
@@ -102,7 +120,7 @@
 }
 
 .swiper-pagination {
-  position: relative;
+  position: static;
 }
 .swiper-pagination-bullet {
   // position: relative;

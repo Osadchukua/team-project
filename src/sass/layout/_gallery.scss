@@ -33,19 +33,19 @@
         width: 320px;
         grid-auto-rows: minmax(43px, auto);
         grid-column-gap: 2.53px;
-        grid-row-gap: 1.89px;        
+        grid-row-gap: 2.52px;        
     }
     @include tablet{
         width: 768px;
         grid-auto-rows: minmax(105px, auto);
         grid-column-gap: 6.07px;
-        grid-row-gap: 4.54px;        
+        grid-row-gap: 5.5px;        
     }
     @include desktop{
         width: 1013px;
         grid-auto-rows: minmax(138px, auto);
         grid-column-gap: 8px;
-        grid-row-gap: 7px;        
+        grid-row-gap: 7.5px;        
     }
 }
 .grid-item {
@@ -95,7 +95,7 @@
 .grid-item:nth-child(4){
     grid-column: 3/5;
     grid-row: 3/1;
-    align-self: center;
+    align-self: center;    
 }
 .grid-item:nth-child(5){
     grid-column: 3/5;
@@ -122,7 +122,7 @@
     @include tablet{
         bottom: 35px;
     }
-    @include tablet{
+    @include desktop{
         bottom: 46px;
     }
 }
@@ -146,7 +146,7 @@
     @include tablet{
         bottom: 60px;
     }
-    @include tablet{
+    @include desktop{
         bottom: 79px;
     }
 }

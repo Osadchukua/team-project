@@ -116,6 +116,8 @@
 .advantages__title {
   height: 56px;
   margin-bottom: 4px;
+
+  font-family: 'Titan One';
   font-size: 36px;
   line-height: calc(41 / 36);
   letter-spacing: 0.04em;
@@ -128,6 +130,8 @@
     text-transform: none;
   }
   @include desktop {
+    height: 65px;
+    margin-bottom: 16px;
     font-size: 58px;
     line-height: calc(66 / 58);
   }

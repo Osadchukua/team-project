@@ -12,6 +12,20 @@
   }
 }
 
+
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  @include tablet {
+    padding-top: 30px;
+    padding-bottom: 64px;
+  }
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+}
+
 .footer {
   padding-top: 40px;
-}
+

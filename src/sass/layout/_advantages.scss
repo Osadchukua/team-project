@@ -1,10 +1,5 @@
 .advantages {
-  padding-top: 20px;
-  padding-bottom: 80px;
   background-color: var(--background-site-second);
-  @include tablet {
-    padding-bottom: 251px;
-  }
 
   &__list {
     padding-right: 50px;
@@ -12,6 +7,9 @@
       display: flex;
       gap: 19px;
       padding-right: 0;
+    }
+    @include desktop {
+      gap: 115px;
     }
   }
 }
@@ -21,12 +19,14 @@
   @include tablet {
     width: 165px;
   }
+  @include desktop {
+    width: 288px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 32px;
     @include tablet {
       margin-bottom: 0;
-      margin-right: 19px;
     }
   }
 
@@ -39,6 +39,9 @@
     margin-bottom: 16px;
     @include tablet {
       margin-bottom: 36px;
+    }
+    @include tablet {
+      margin-bottom: 40px;
     }
   }
 
@@ -76,5 +79,10 @@
   @include tablet {
     font-size: 14px;
     line-height: 1.74;
+  }
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
   }
 }

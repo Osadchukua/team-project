@@ -3,7 +3,7 @@ body.no-scroll{
 }
 
 
-.mob-menu {
+.menu-mob {
     position: absolute;
     background-color: #E17992;
     width: 100vw;
@@ -11,19 +11,23 @@ body.no-scroll{
     padding-top: 58px;
     z-index: 2;
     opacity: 1;
+    visibility: visible;
     overflow-y: scroll;
     transform: translateX(0);
-    transition: transform var(--transition-duration) var(--timing-function);
+    transition: transform 1000ms var(--timing-function);
+    // transition: transform var(--transition-duration) var(--timing-function),
+    //             opacity var(--transition-duration) var(--timing-function),
+    //             visibility var(--transition-duration) var(--timing-function);
 
 }
 
-.mob-menu.is-hidden{
+.menu-mob.is-hidden{
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
     transform: translateX(100%);
     display: none;
-    transition: transform var(--transition-duration) var(--timing-function);
+    // transition: transform var(--transition-duration) var(--timing-function);
 }
 
 .menu-close-btn{
@@ -65,10 +69,6 @@ body.no-scroll{
     fill: var(--background-btn1);
 }
 
-// .menu-close-icon {
-
-//     fill: tomato;
-// }
 
 .nav-list__item {
     padding-top: 12px;
@@ -81,8 +81,8 @@ body.no-scroll{
 }
 
 .nav-list__link {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    // padding-top: 12px;
+    // padding-bottom: 12px;
     padding-left: 20px;
 
     font-style: normal;

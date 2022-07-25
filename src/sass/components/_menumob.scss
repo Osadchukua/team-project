@@ -1,10 +1,20 @@
-body.no-scroll{
-   overflow: hidden;
+
+// body .no-scroll{
+//    overflow: hidden;
+// }
+
+
+.menu-mob.is-hidden {
+       opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
 }
 
-
 .menu-mob {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #E17992;
     width: 100vw;
     height: 100vh;
@@ -14,21 +24,14 @@ body.no-scroll{
     visibility: visible;
     overflow-y: scroll;
     transform: translateX(0);
-    transition: transform 1000ms var(--timing-function);
-    // transition: transform var(--transition-duration) var(--timing-function),
-    //             opacity var(--transition-duration) var(--timing-function),
-    //             visibility var(--transition-duration) var(--timing-function);
+    transition: transform var(--transition-duration) var(--timing-function),
+                opacity var(--transition-duration) var(--timing-function),
+                visibility var(--transition-duration) var(--timing-function);
 
 }
 
-.menu-mob.is-hidden{
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    transform: translateX(100%);
-    display: none;
-    // transition: transform var(--transition-duration) var(--timing-function);
-}
+
+
 
 .menu-close-btn{
     position: absolute;
@@ -81,8 +84,7 @@ body.no-scroll{
 }
 
 .nav-list__link {
-    // padding-top: 12px;
-    // padding-bottom: 12px;
+   
     padding-left: 20px;
 
     font-style: normal;

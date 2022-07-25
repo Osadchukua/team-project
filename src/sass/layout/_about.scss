@@ -1,3 +1,7 @@
+#more {
+  display: none;
+}
+
 .about {
   position: relative;
   background-color: var(--background-site-second);
@@ -147,6 +151,7 @@
     font-size: 14px;
     line-height: 1.28;
     text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include tablet {
       font-size: 16px;

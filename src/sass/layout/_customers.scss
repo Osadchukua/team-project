@@ -22,8 +22,8 @@
 }
 .customer-reviews__imgs {
   margin-bottom: 30px;
-  // border-radius: 50%;
-  // height: 85px;
+  border-radius: 50%;
+
   @include tablet {
     margin-bottom: 20px;
   }
@@ -112,6 +112,7 @@
     text-align: center;
     width: 32px;
     height: 4px;
+    background-size: contain;
     background-image: url(../images/customer-tripledots-mob.png);
     @include retina {
       background-image: url(../images/customer-tripledots-mob-2x.png);

@@ -2,37 +2,38 @@
     padding-top: 136px;
     padding-bottom: 158px;
     background-color: var(--background-product1);
-    background-image: url(../images/header-ice-cream-mob.png), radial-gradient(circle, rgba(255, 165, 186, 1) 55%, rgba(255, 184, 202, 1) 55%); 
+    background-image: url(../images/header-ice-cream-mob.png), radial-gradient(ellipse, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%); 
     background-repeat: no-repeat;
     background-position: bottom left 117px, bottom 75px left 36px;
-    
+    background-size: 171px 410px,346px 344px;
 
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx){
-        background-image: url(../images/header-ice-cream-mob-2x.png), radial-gradient(circle, rgba(255, 165, 186, 1) 55%, rgba(255, 184, 202, 1) 55%);
-        }
+    @include retina {
+        background-image: url(../images/header-ice-cream-mob-2x.png), radial-gradient(ellipse, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%);
+        
+    } 
 
     @include tablet{
-        padding-top: 102px;
-        padding-bottom: 40px;
-        background-image: url(../images/header-milk-tab.png),url(../images/header-ice-cream-tab.png),url(../images/header-girl-tab.png),radial-gradient(circle, rgba(255, 165, 186, 1) 38%, rgba(255, 184, 202, 1) 38%); 
+        padding-top: 92px;
+        padding-bottom: 56px;
+        background-image: url(../images/header-milk-tab.png),url(../images/header-ice-cream-tab.png),url(../images/header-girl-tab.png),radial-gradient(ellipse, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%); 
         background-position: bottom 16px left 32px, bottom left 322px,
-            right 32px bottom 1px, bottom 20px left 5px;
+            right 32px bottom 1px, bottom 40px left 248px;
+        background-size: 152px 154px,143px 336px, 190px 150px, 335px 333px;
 
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/header-milk-tab-2x.png),url(../images/header-ice-cream-tab-2x.png), radial-gradient(circle, rgba(255, 165, 186, 1) 43%, rgba(255, 184, 202, 1) 43%),url(../images/header-girl-tab-2x.png);
+        @include retina {
+                background-image: url(../images/header-milk-tab-2x.png), url(../images/header-ice-cream-tab-2x.png), url(../images/header-girl-tab-2x.png), radial-gradient(ellipse, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%);
             }
+
+        }
+
+       
     }       
-    }
+       
 
 
-
-.hero .container{
-    // margin-left: 0;
-    // margin-right: 0;
+.hero-thumb{
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero-title{
@@ -48,6 +49,7 @@
     width: 218px;
 
     @include tablet{
+        padding-top: 10px;
         font-weight: 400;
         font-size: 22px;
         line-height: calc(25/22);
@@ -151,4 +153,82 @@
     fill: var(--background-btn1);
 }
 
+.hero-benefits{
+    display: none;
+
+    @include tablet{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    
+}
+.hero-benefits__list{
+    max-width: 92px; 
+
+
+}
+
+.hero-benefits__item{
+    position: relative;
+    margin-bottom: 16px;
+    z-index: 1;
+
+    &:first-child .hero-benefits__number{
+        text-align: left;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    &:last-child .hero-benefits__text {
+            text-align: left;
+        }
+}
+
+
+.hero-benefits__number::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: -1;
+    
+    
+}
+
+.hero-benefits__number {
+    margin-bottom: 2px;font-family: 'Titan One';
+     font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: calc(32/28);
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--background-logo);
+    
+    @include desktop{
+        font-size: 46px;
+        line-height: calc(53/46);
+    }
+}
+
+.hero-benefits__text {
+    font-size: 8px;
+        line-height: calc(10/8);
+    text-align: center;
+
+    color: var(--background-site-main);
+
+    @include desktop {
+        font-size: 14px;
+        line-height: calc(18/14);
+    }
+}
 

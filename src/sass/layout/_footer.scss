@@ -1,5 +1,4 @@
 .footer {
-  padding-top: 32px;
   padding-bottom: 3px;
   background: var(--background-site-second);
 }
@@ -7,55 +6,99 @@
 .footer__container {
   display: flex;
   flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    align-items: flex-end;
+    margin-bottom: 60px;
+  }
 }
 
-.footer__button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
+// .footer__button {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-bottom: 40px;
+// }
 
-.footer__btn-icon {
-  margin-left: 5px;
-  fill: #ffffff;
-}
+// .footer__btn-icon {
+//   margin-left: 5px;
+//   fill: #ffffff;
+// }
 
 .footer__logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 66px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  width: 234px;
+  // margin-right: 66px;
   margin-bottom: 40px;
+  @include tablet {
+    width: 340px;
+    margin-bottom: 0px;
+  }
+  @include desktop {
+    width: 100%;
+  }
 }
 
-.footer__contact{
-    display: flex;
+.footer__contact {
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0px;
+  }
+  @include desktop {
+    width: 100%;
+  }
 }
 
-.footer__text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: calc(22 / 18);
-  text-align: right;
-  color: var(--color-text-first);
-}
+.footer__contact--text,
 .footer__text-tel {
   font-weight: 700;
   font-size: 12px;
   line-height: calc(22 / 12);
   text-align: right;
+  color: var(--color-text-first);
+  @include tablet {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.02em;
+  }
+}
+.footer__text-tel {
   color: var(--color-text-focus);
 }
-.footer__text--copyright {
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #e1e1e1;
+}
+
+.footer__copyright--text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(21 / 14);
   text-align: center;
   color: var(--color-text-second);
-border-top: 1px solid #E1E1E1;
-padding: 16px 90px 3px;
+  padding: 16px 0px 3px;
+  opacity: 0.6;
+  width: 140px;
+  @include tablet {
+    width: 100%;
+    padding: 8px 0px 8px;
+    line-height: calc(26 / 14);
+    letter-spacing: 0.02em;
+  }
 }

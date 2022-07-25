@@ -116,6 +116,8 @@
 .advantages__title {
   height: 56px;
   margin-bottom: 4px;
+
+  font-family: 'Titan One';
   font-size: 36px;
   line-height: calc(41 / 36);
   letter-spacing: 0.04em;
@@ -128,12 +130,17 @@
     text-transform: none;
   }
   @include desktop {
+    height: 65px;
+    margin-bottom: 16px;
     font-size: 58px;
     line-height: calc(66 / 58);
   }
 }
 
-.footer__title-pre {
+.footer__text-pre {
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
   text-transform: uppercase;
@@ -150,7 +157,10 @@
   }
 }
 
-.footer__title {
+.footer__text {
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: 400;
   font-size: 34px;
   line-height: calc(39 / 34);
   letter-spacing: 0.04em;

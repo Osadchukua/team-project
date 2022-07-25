@@ -4,6 +4,7 @@
    
     @include tablet{
         position: absolute;
+        padding-top: 0;
         background-color: transparent;
     }
 }
@@ -21,6 +22,11 @@
     }
 }
 
+.logo_link{
+    margin: 0;
+    padding: 0;
+}
+
 .header__buy-btn{
     display: none;
 
@@ -36,7 +42,6 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 1.31;
-            // align-items: center;
             text-align: center;
             color: var(--background-btn1);
             transition: background-color var(--transition-duration) var(--timing-function);
@@ -63,4 +68,5 @@
 .menu-mob.is-hidden .menu-close-btn {
     display: none;
 }
+
 

@@ -96,7 +96,6 @@
 }
 
 .about__title {
-  margin-top: 16px;
   font-size: 34px;
   line-height: calc(39 / 34);
   text-align: center;
@@ -134,7 +133,10 @@
   }
 }
 
-.footer__title-pre {
+.footer__text-pre {
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
   text-transform: uppercase;
@@ -151,7 +153,10 @@
   }
 }
 
-.footer__title {
+.footer__text {
+  font-family: 'Titan One', cursive;
+  font-style: normal;
+  font-weight: 400;
   font-size: 34px;
   line-height: calc(39 / 34);
   letter-spacing: 0.04em;

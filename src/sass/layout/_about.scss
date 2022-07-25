@@ -1,13 +1,9 @@
 .about {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  @include tablet {
-    padding-bottom: 30px;
-  }
   background-color: var(--background-site-second);
 
   &__label {
+    margin-bottom: 16px;
     font-family: 'Titan One';
     font-style: normal;
     @include tablet {
@@ -56,32 +52,22 @@
     @include desktop {
       align-items: center;
       gap: 99px;
+      justify-content: space-between;
     }
   }
 
   &__content--additional {
-    @include tablet {
-      width: calc((100% - 32px) / 2);
-    }
-  }
-
-  &__list {
     z-index: 1;
-    position: relative;
     width: 220px;
     @include tablet {
-      width: 100%;
+      width: calc((100% - 32px) / 2);
     }
     @include desktop {
       width: 463px;
     }
   }
 
-  &__item {
-    display: block;
-    z-index: 1;
-  }
-  &__item:not(:last-child) {
+  &__text {
     margin-bottom: 27px;
 
     color: var(--color-text-first);
@@ -101,15 +87,34 @@
       line-height: calc(28 / 16);
     }
   }
-  &__item:last-child {
-    margin-bottom: 20px;
 
+  &__text--additional {
     color: var(--color-text-second);
     font-weight: 500;
     font-size: 12px;
     line-height: calc(19 / 12);
     z-index: 1;
+    margin-bottom: 18px;
+    @include tablet {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: calc(25 / 14);
+      letter-spacing: 0.04em;
+      text-align: left;
+    }
+    @include desktop {
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: calc(27 / 14);
+    }
+  }
 
+  &__paragraph {
+    margin-bottom: 20px;
+    color: var(--color-text-second);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(19 / 12);
     @include tablet {
       margin-bottom: 40px;
       font-size: 14px;
@@ -118,10 +123,12 @@
       text-align: left;
     }
     @include desktop {
+      margin-bottom: 40px;
       font-size: 14px;
       line-height: calc(27 / 14);
     }
   }
+
   &__btn {
     width: 176px;
     height: 44px;
@@ -140,6 +147,7 @@
     font-size: 14px;
     line-height: 1.28;
     text-align: center;
+
     @include tablet {
       font-size: 16px;
       line-height: calc(21 / 16);
@@ -149,10 +157,12 @@
       background-color: var(--background-btn2-focus);
     }
   }
+
   &__btn-icon {
     margin-left: 14px;
     fill: var(--background-btn1);
   }
+
   &__pic {
     @include tablet {
       width: calc((100% - 32px) / 2);
@@ -161,8 +171,25 @@
       width: 501px;
     }
   }
+
   &__pic--additional {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__img--additional {
     position: absolute;
+    pointer-events: none;
     top: 594px;
     left: 0;
     width: 100%;
@@ -175,23 +202,6 @@
       left: 0;
       top: 210px;
       width: 100%;
-    }
-  }
-  &__img {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    @include tablet {
-      margin-bottom: 0px;
-    }
-  }
-  &__paragraph {
-    margin-top: 18px;
-    @include tablet {
-      margin-top: 10px;
-    }
-    @include desktop {
-      margin-top: 30px;
     }
   }
 }

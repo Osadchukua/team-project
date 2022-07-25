@@ -4,5 +4,14 @@
 //   }
 // }
 
+.about {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  @include tablet {
+    padding-bottom: 30px;
+  }
+}
 
-
+.footer {
+  padding-top: 40px;
+}

@@ -83,7 +83,7 @@
   }
 }
 
-.footer__btn {
+.contacts__btn {
   display: flex;
   width: 161px;
   height: 44px;
@@ -95,6 +95,9 @@
   background-color: var(--background-btn1);
   color: var(--color-text-btn1);
   margin-bottom: 10px;
+  border-radius: 22px;
+  transition: background-color var(--transition-duration) var(--timing-function);
+  
   @include tablet {
     width: 191px;
   }
@@ -103,7 +106,7 @@
   }
 }
 
-.footer__second-btn {
+.contacts__second-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +117,9 @@
   line-height: calc(21 / 16);
   background-color: var(--background-btn2);
   color: var(--color-text-btn2);
+  border-radius: 22px;
+  transition: background-color var(--transition-duration) var(--timing-function);
+
   &:hover,
   &:focus {
     background-color: var(--background-btn2-focus);
@@ -125,6 +131,3 @@
     width: 168px;
   }
 }
-
-// .footer__btn-icon {
-// }

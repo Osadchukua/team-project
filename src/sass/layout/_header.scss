@@ -1,11 +1,20 @@
 .page-header {
    position: fixed;
-   width: 100%;
    z-index: 3;
     background-color: var(--background-product1);
+
    
+    @media screen and (max-width: 767px){
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
     @include tablet{
         position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         padding-top: 0;
         background-color: transparent;
     }
@@ -13,17 +22,20 @@
 
 
 .page-header .container{
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 8px;
 
     @include tablet{
+
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 32px;
     }
+
+    
 }
 
 .logo_link{

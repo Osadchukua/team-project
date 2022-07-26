@@ -4,6 +4,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   //   font-family: 'Titan One', cursive;
   background: #ffffff;
+  
 }
 
 ul {
@@ -26,4 +27,8 @@ h6 {
   font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
+}
+
+html{
+  scroll-behavior: smooth;
 }

@@ -12,7 +12,6 @@
   }
 }
 
-
 .advantages {
   padding-top: 20px;
   padding-bottom: 80px;
@@ -26,6 +25,13 @@
   }
 }
 
-.footer {
+.contacts {
   padding-top: 40px;
+}
+
+.footer {
+  padding-bottom: 3px;
+  @include tablet {
+    padding-bottom: 8px;
+  }
 }

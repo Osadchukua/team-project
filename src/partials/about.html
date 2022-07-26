@@ -58,7 +58,7 @@
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
           justo fringilla.
         </p>
-        <ul class="text-list-main hidden">
+        <ul class="text-list-main">
           <li class="about__text--additional">
             Curabitur lacinia enim at ex blandit, vel pellentesque odio
             elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
@@ -68,7 +68,7 @@
           <li class="about__paragraph">
             Aliquam erat volutpat. Aenean accumsan.<span id="dots">..</span>
           </li>
-          <ul id="more" class="text-list">
+          <ul id="more" class="text-list" more-text>
             <li class="text-list__item">
               <picture class="text-list__pic">
                 <source
@@ -135,7 +135,12 @@
           </ul>
         </ul>
         <div class="about__btn-container">
-          <button class="about__btn" onclick="myFunction()" id="myBtn">
+          <button
+            class="about__btn"
+            onclick="myFunction()"
+            id="myBtn"
+            list-open
+          >
             Read more
           </button>
           <svg

@@ -3,12 +3,10 @@
 }
 
 .text-list {
-  display: block;
   gap: 10px;
   margin-bottom: 20px;
+
   @include tablet {
-    display: flex;
-    flex-direction: row;
     gap: 20px;
     margin-bottom: 10px;
   }

@@ -1,5 +1,4 @@
 .footer {
-  padding-bottom: 3px;
   background: var(--background-site-second);
 }
 
@@ -77,12 +76,12 @@
   line-height: calc(21 / 14);
   text-align: center;
   color: var(--color-text-second);
-  padding: 16px 0px 3px;
+  margin-top: 16px;
   opacity: 0.6;
   width: 140px;
   @include tablet {
     width: 100%;
-    padding: 8px 0px 8px;
+    margin-top: 8px;
     line-height: calc(26 / 14);
     letter-spacing: 0.02em;
   }

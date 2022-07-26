@@ -3,6 +3,23 @@
 //     padding: 60px 0px;
 //   }
 // }
+.hero {
+  padding-top: 198px;
+  padding-bottom: 158px;
+  @include tablet {
+    padding-top: 92px;
+    padding-bottom: 56px;
+  }
+  @include desktop {
+    padding-top: 147px;
+    padding-bottom: 84px;
+  }
+}
+
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .about {
   padding-top: 60px;
@@ -14,10 +31,9 @@
 
 .advantages {
   padding-top: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   @include tablet {
     padding-top: 30px;
-    padding-bottom: 64px;
   }
   @include desktop {
     padding-top: 60px;
@@ -25,13 +41,41 @@
   }
 }
 
+.gallery {
+  padding-bottom: 20px;
+}
+
+.customer-reviews {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  @include tablet {
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+
 .contacts {
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  @include tablet {
+    padding-top: 40px;
+  }
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer {
+  padding-top: 20px;
   padding-bottom: 3px;
   @include tablet {
     padding-bottom: 8px;
+  }
+  @include desktop {
+    padding-top: 60px;
   }
 }

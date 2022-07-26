@@ -37,7 +37,7 @@
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
           justo fringilla.<span id="dots">..</span>
         </p>
-        <ul id="more">
+        <ul id="more" class="text-list hidden" text-list>
           <li class="about__text--additional">
             Curabitur lacinia enim at ex blandit, vel pellentesque odio
             elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
@@ -48,13 +48,19 @@
             Aliquam erat volutpat. Aenean accumsan.
           </li>
         </ul>
-
-        <button class="about__btn" onclick="myFunction()" id="myBtn">
-          Read more
+        <div class="about__btn-container">
+          <button
+            class="about__btn"
+            onclick="myFunction()"
+            id="myBtn"
+            open-list
+          >
+            Read more
+          </button>
           <svg
             class="about__btn-icon"
-            width="7"
-            height="10"
+            width="9"
+            height="9"
             role="img"
             aria-label="Read more"
           >
@@ -63,7 +69,7 @@
               href="./images/icons.svg#icon-bracket-second"
             ></use>
           </svg>
-        </button>
+        </div>
       </div>
     </div>
   </div>

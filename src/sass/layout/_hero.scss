@@ -1,11 +1,21 @@
 .hero{
+    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-product1);
+}
+
+.hero .container{
     padding-top: 198px;
     padding-bottom: 158px;
+   max-width: 100%;
+    
     background-color: var(--background-product1);
     background-image: url(../images/header-ice-cream-mob.png), radial-gradient(ellipse, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%); 
     background-repeat: no-repeat;
     background-position: bottom left 117px, bottom 75px left 36px;
     background-size: 171px 410px,346px 344px;
+    
 
     @include retina {
         background-image: url(../images/header-ice-cream-mob-2x.png), radial-gradient(ellipse, rgba(255, 165, 186, 1) 70%, rgba(255, 184, 202, 1) 70%);

@@ -35,9 +35,9 @@
         <p class="about__text">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-          justo fringilla.<span id="dots">..</span>
+          justo fringilla.
         </p>
-        <ul id="more" class="text-list hidden" text-list>
+        <ul class="text-list-main hidden">
           <li class="about__text--additional">
             Curabitur lacinia enim at ex blandit, vel pellentesque odio
             elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
@@ -45,16 +45,76 @@
             massa nibh, tincidunt.
           </li>
           <li class="about__paragraph">
-            Aliquam erat volutpat. Aenean accumsan.
+            Aliquam erat volutpat. Aenean accumsan.<span id="dots">..</span>
           </li>
+          <ul id="more" class="text-list">
+            <li class="text-list__item">
+              <picture class="text-list__pic">
+                <source
+                  srcset="
+                    ./images/about-more-cow.jpg    1x,
+                    ./images/about-more-cow-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/about-cow-mob.png"
+                  alt="Image with cow and milk"
+                  class="text-list__img"
+                />
+              </picture>
+              <p class="about__paragraph-more">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+                quasi
+              </p>
+            </li>
+            <li class="text-list__item">
+              <picture class="text-list__pic">
+                <source
+                  srcset="
+                    ./images/about-more-produce.jpg    1x,
+                    ./images/about-more-produce-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/about-cow-mob.png"
+                  alt="Image with cow and milk"
+                  class="text-list__img"
+                />
+              </picture>
+              <p class="about__paragraph-more">
+                Sit amet consectetur adipisicing elit. Voluptates provident nisi
+                autem. Amet voluptates fugit saepe soluta voluptatibus,
+                temporibus nostrum!
+              </p>
+            </li>
+            <li class="text-list__item">
+              <picture class="text-list__pic">
+                <source
+                  srcset="
+                    ./images/about-more-icecream.jpg    1x,
+                    ./images/about-more-icecream-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/about-cow-mob.png"
+                  alt="Image with cow and milk"
+                  class="text-list__img"
+                />
+              </picture>
+              <p class="about__paragraph-more">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+                euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                Cras massa nibh, tincidunt.
+              </p>
+            </li>
+          </ul>
         </ul>
         <div class="about__btn-container">
-          <button
-            class="about__btn"
-            onclick="myFunction()"
-            id="myBtn"
-            open-list
-          >
+          <button class="about__btn" onclick="myFunction()" id="myBtn">
             Read more
           </button>
           <svg

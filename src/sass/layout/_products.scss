@@ -63,6 +63,8 @@
   margin-top: 140px;
   padding-top: 160px;
   padding-bottom: 40px;
+  padding-right: 42px;
+  padding-left: 42px;
 
   &.cream__cards {
     background-color: var(--background-product1);
@@ -79,6 +81,8 @@
     margin-top: 0px;
     padding-top: 118px;
     margin-left: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
   @include desktop {
     max-width: calc((100% - 64px) / 3);
@@ -86,6 +90,8 @@
     padding-top: 165px;
     margin-left: 32px;
     padding-bottom: 60px;
+    padding-right: 64px;
+    padding-left: 64px;
   }
 }
 
@@ -100,6 +106,7 @@
   content: '';
   position: absolute;
   top: -137px;
+  left: 0px;
   width: 280px;
   height: 280px;
   background-size: contain;
@@ -203,8 +210,6 @@
 
 .product__description {
   margin-bottom: 32px;
-  padding-right: 42px;
-  padding-left: 42px;
   font-family: 'DM Sans';
   color: var(--color-title-products);
   font-size: 14px;
@@ -213,15 +218,11 @@
   letter-spacing: 0.04em;
 
   @include tablet {
-    padding-right: 32px;
-    padding-left: 32px;
     line-height: 1.76;
   }
 
   @include desktop {
     margin-bottom: 60px;
-    padding-right: 61px;
-    padding-left: 62px;
     font-size: 16px;
     line-height: 1.76;
   }

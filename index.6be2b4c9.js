@@ -1,2 +1,0 @@
-function myFunction(){var e=document.getElementById("dots"),t=document.getElementById("more"),n=document.getElementById("myBtn");"none"===e.style.display?(e.style.display="inline",n.innerHTML="Read more",t.style.display="none"):(e.style.display="none",n.innerHTML="Read less",t.style.display="inline")}!function(){var e={opentextBtn:document.querySelector("[open-list]"),text:document.querySelector("[text-list]")};e.opentextBtn.addEventListener("click",(function(){e.text.classList.toggle("hidden")}))}();
-//# sourceMappingURL=index.6be2b4c9.js.map

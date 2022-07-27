@@ -48,6 +48,16 @@
         grid-row-gap: 7.5px;        
     }
 }
+.gallery-item{
+    transition: transform 0.5s ease;
+    z-index: 0;
+&:hover,
+&:focus{
+    transform: scale(1.3);
+    cursor: pointer;
+    z-index: 1;
+}
+}
 .gallery-item {
     overflow: hidden;
     @include mobile{

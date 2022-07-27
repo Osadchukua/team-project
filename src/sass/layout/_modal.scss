@@ -54,14 +54,14 @@
     transform: translate(0%, 0%) scale(1);
   }
 
-@media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) {
     width: 300px;
   }
 
   @media screen and (min-width: 480px) {
     width: 360px;
   }
-  
+
   @include tablet {
     width: 480px;
   }
@@ -81,7 +81,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor:  url(https://cur.cursors-4u.net/food/foo-4/foo352.ani), url(https://cur.cursors-4u.net/food/foo-4/foo352.png), pointer;
+  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo352.ani),
+    url(https://cur.cursors-4u.net/food/foo-4/foo352.png), pointer;
 
   width: 30px;
   height: 30px;
@@ -90,19 +91,21 @@
   background: var(--color-text-header);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: #d41443;
+  }
+  &:focus {
+    border: 1px solid #d41443;
+    outline: 1px solid var(--accent-color);
   }
 }
 
 .modal__btn-close:hover .modal__icon-btn {
-fill: white;
+  fill: white;
 }
 
-
 .modal__title {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -164,7 +167,7 @@ fill: white;
   padding-bottom: 11px;
 
   // border: 1px solid rgba(33, 33, 33, 0.2);
-  border: 1px solid #E18298;
+  border: 1px solid #e18298;
   border-radius: 4px;
 
   background-color: transparent;
@@ -207,8 +210,8 @@ fill: white;
   transition: fill var(--transition-duration) var(--timing-function);
 }
 
-.modal__icon-btn{
-fill: #d41443;
+.modal__icon-btn {
+  fill: #d41443;
 }
 
 .modal__comment {
@@ -224,7 +227,8 @@ fill: #d41443;
 
   margin-top: 30px;
 
-  cursor:  url(https://cur.cursors-4u.net/food/foo-4/foo352.ani), url(https://cur.cursors-4u.net/food/foo-4/foo352.png), auto;
+  cursor: url(https://cur.cursors-4u.net/food/foo-4/foo352.ani),
+    url(https://cur.cursors-4u.net/food/foo-4/foo352.png), auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
@@ -270,9 +274,14 @@ fill: #d41443;
   flex-shrink: 0;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  // margin-right: 7px;
   border-radius: 2px;
   border: 1.6px solid #000000;
+  &:hover,
+  &:focus {
+    border: 1.6px solid var(--background-btn1);
+    outline: 1px solid var(--accent-color);
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -281,7 +290,7 @@ fill: #d41443;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2px;
-  border: 1px solid #2196f3;
+  border: 1.6px solid var(--background-btn1);
   background-size: 11px 8px;
 }
 
@@ -289,6 +298,11 @@ fill: #d41443;
   display: flex;
   align-items: baseline;
   margin-right: 7px;
+  // &:hover,
+  // &:focus {
+
+  //   outline: 1px solid var(--accent-color);
+  // }
 }
 
 .checkbox__contract {

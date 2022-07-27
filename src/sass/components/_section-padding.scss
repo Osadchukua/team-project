@@ -19,6 +19,9 @@
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
+  @include desktop {
+    padding-top: 61px;
+  }
 }
 
 .about {
@@ -31,7 +34,7 @@
 
 .advantages {
   padding-top: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 64px;
   @include tablet {
     padding-top: 30px;
   }
@@ -78,5 +81,4 @@
   @include desktop {
     padding-top: 60px;
   }
-
 }

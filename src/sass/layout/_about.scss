@@ -102,7 +102,6 @@
       gap: 32px;
     }
     @include desktop {
-      align-items: center;
       gap: 99px;
       justify-content: space-between;
     }
@@ -116,6 +115,7 @@
     }
     @include desktop {
       width: 463px;
+      padding-top: 90px;
     }
   }
 

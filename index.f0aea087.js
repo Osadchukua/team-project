@@ -1,0 +1,2 @@
+function myFunction(){var e=document.getElementById("dots"),n=(document.getElementById("more"),document.getElementById("myBtn"));"none"===e.style.display?(e.style.display="inline",n.innerHTML="Read more"):(e.style.display="none",n.innerHTML="Read less")}!function(){var e={openMoreBtn:document.querySelector("[list-open]"),more:document.querySelector("[more-text]")};e.openMoreBtn.addEventListener("click",(function(){e.more.classList.toggle("text-shown")}))}();
+//# sourceMappingURL=index.f0aea087.js.map

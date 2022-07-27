@@ -67,6 +67,15 @@
         border-radius: 20px;
     }
 }
+.gallery-pic{
+    overflow: hidden;
+    @include mobile{
+        border-radius: 8px;
+    }
+    @include tablet{
+        border-radius: 20px;
+    }
+}
 .gallery-item:nth-child(1) {    
     grid-row: 1/4;  
     position: absolute;

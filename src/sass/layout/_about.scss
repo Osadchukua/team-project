@@ -3,12 +3,10 @@
 }
 
 .text-list {
-  display: block;
   gap: 10px;
   margin-bottom: 20px;
+
   @include tablet {
-    display: flex;
-    flex-direction: row;
     gap: 20px;
     margin-bottom: 10px;
   }
@@ -258,15 +256,16 @@
     @include desktop {
       display: block;
       position: absolute;
-      left: 0;
-      top: 210px;
-      max-width: 100%;
-    }
-    @media screen and (min-width: 1400px) {
-      top: 71%;
+      top: 63%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 1400px;
+      max-width: 100%;
+    }
+    @media screen and (min-width: 1500px) {
+      top: 63%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1500px;
     }
   }
 }

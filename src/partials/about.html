@@ -6,18 +6,39 @@
       <picture class="about__pic">
         <source
           srcset="
+            ./images/about-cow-desktop.png    1x,
+            ./images/about-cow-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/about-cow-tab.png    1x,
+            ./images/about-cow-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
             ./images/about-cow-mob.png    1x,
             ./images/about-cow-mob-2x.png 2x
           "
           media="(min-width: 320px)"
         />
         <img
-          src="./images/about-cow-mob.png"
+          src="./images/about-cow-desktop.png"
           alt="Image with cow and milk"
           class="about__img"
         />
       </picture>
       <picture class="about__pic--additional">
+        <source
+          srcset="
+            ./images/about-milk-desktop.png    1x,
+            ./images/about-milk-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
         <source
           srcset="
             ./images/about-milk-mob.png    1x,
@@ -26,7 +47,7 @@
           media="(min-width: 320px)"
         />
         <img
-          src="./images/about-milk-mob.png"
+          src="./images/about-milk-desktop.png"
           alt="Image with cow and milk"
           class="about__img--additional"
         />
@@ -37,7 +58,7 @@
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
           justo fringilla.
         </p>
-        <ul class="text-list-main hidden">
+        <ul class="text-list-main">
           <li class="about__text--additional">
             Curabitur lacinia enim at ex blandit, vel pellentesque odio
             elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
@@ -47,7 +68,7 @@
           <li class="about__paragraph">
             Aliquam erat volutpat. Aenean accumsan.<span id="dots">..</span>
           </li>
-          <ul id="more" class="text-list">
+          <ul id="more" class="text-list" more-text>
             <li class="text-list__item">
               <picture class="text-list__pic">
                 <source
@@ -58,7 +79,7 @@
                   media="(min-width: 320px)"
                 />
                 <img
-                  src="./images/about-cow-mob.png"
+                  src="./images/about-more-cow.jpg"
                   alt="Image with cow and milk"
                   class="text-list__img"
                 />
@@ -78,7 +99,7 @@
                   media="(min-width: 320px)"
                 />
                 <img
-                  src="./images/about-cow-mob.png"
+                  src="./images/about-more-produce.jpg"
                   alt="Image with cow and milk"
                   class="text-list__img"
                 />
@@ -99,7 +120,7 @@
                   media="(min-width: 320px)"
                 />
                 <img
-                  src="./images/about-cow-mob.png"
+                  src="./images/about-more-icecream.jpg"
                   alt="Image with cow and milk"
                   class="text-list__img"
                 />
@@ -114,7 +135,12 @@
           </ul>
         </ul>
         <div class="about__btn-container">
-          <button class="about__btn" onclick="myFunction()" id="myBtn">
+          <button
+            class="about__btn"
+            onclick="myFunction()"
+            id="myBtn"
+            list-open
+          >
             Read more
           </button>
           <svg

@@ -130,13 +130,58 @@
     margin-bottom: 50px;
   }
   &.chikago {
-    background-image: url(../images/chicago.jpg);
+    background-image: url(../images/chicago-mob.jpg);
+    @include retina {
+      background-image: url(../images/chicago-mob-2x.jpg);
+    }
+    @include tablet {
+      background-image: url(../images/chicago-tab.jpg);
+      @include retina {
+        background-image: url(../images/chicago-tab-2x.jpg);
+      }
+    }
+    @include desktop {
+      background-image: url(../images/chicago-desk.jpg);
+      @include retina {
+        background-image: url(../images/chicago-desk-2x.jpg);
+      }
+    }
   }
   &.la {
-    background-image: url(../images/los-angeles.jpg);
+    background-image: url(../images/los-angeles-mob.jpg);
+    @include retina {
+      background-image: url(../images/los-angeles-mob-2x.jpg);
+    }
+    @include tablet {
+      background-image: url(../images/los-angeles-tab.jpg);
+      @include retina {
+        background-image: url(../images/los-angeles-tab-2x.jpg);
+      }
+    }
+    @include desktop {
+      background-image: url(../images/los-angeles-desk.jpg);
+      @include retina {
+        background-image: url(../images/los-angeles-desk-2x.jpg);
+      }
+    }
   }
   &.ny {
-    background-image: url(../images/new-york.jpg);
+    background-image: url(../images/new-york-mob.jpg);
+    @include retina {
+      background-image: url(../images/new-york-mob-2x.jpg);
+    }
+    @include tablet {
+      background-image: url(../images/new-york-tab.jpg);
+      @include retina {
+        background-image: url(../images/new-york-tab-2x.jpg);
+      }
+    }
+    @include desktop {
+      background-image: url(../images/new-york-desk.jpg);
+      @include retina {
+        background-image: url(../images/new-york-desk-2x.jpg);
+      }
+    }
   }
 }
 

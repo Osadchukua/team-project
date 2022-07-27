@@ -20,7 +20,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   @include desktop {
-    padding-top: 61px;
+    padding-top: 60px;
   }
 }
 
@@ -34,18 +34,20 @@
 
 .advantages {
   padding-top: 20px;
-  padding-bottom: 64px;
+  padding-bottom: 60px;
   @include tablet {
     padding-top: 30px;
   }
   @include desktop {
-    padding-top: 60px;
     padding-bottom: 120px;
   }
 }
 
 .gallery {
   padding-bottom: 30px;
+@include desktop {
+  padding-bottom: 20px;
+}
 }
 
 .customer-reviews {

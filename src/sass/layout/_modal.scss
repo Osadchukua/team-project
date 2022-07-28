@@ -271,6 +271,7 @@
 .checkbox__icon {
   display: inline-block;
   flex-shrink: 0;
+  margin-right: 10px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
@@ -290,14 +291,13 @@
   background-position: center;
   border-radius: 2px;
   border: 1.6px solid var(--background-btn1);
-  background-size: 11px 8px;
+  background-size: contain;
 }
 
 .checkbox__label {
   display: flex;
-  align-items: baseline;
-  margin-right: 7px;
- }
+  align-items: flex-end;
+}
 
 .checkbox__contract {
   color: var(--background-btn2);

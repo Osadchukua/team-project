@@ -4,7 +4,9 @@ body {
   font-family: 'DM Sans', sans-serif;
   //   font-family: 'Titan One', cursive;
   background: #ffffff;
-  
+  &.no-scroll{
+    overflow: hidden;
+  }
 }
 
 ul {

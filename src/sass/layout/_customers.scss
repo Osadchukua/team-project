@@ -113,6 +113,7 @@
     width: 32px;
     height: 4px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url(../images/customer-tripledots-mob.png);
     @include retina {
       background-image: url(../images/customer-tripledots-mob-2x.png);

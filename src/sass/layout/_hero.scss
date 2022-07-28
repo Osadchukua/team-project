@@ -125,6 +125,7 @@
 
 .hero-btn__list{
     display: flex;
+  
 }
 
 .hero-btn__item:not(:last-child){
@@ -139,8 +140,10 @@
     }
 }
 
-.hero-btn__btn--primary{
-    display: block;
+.hero-btn__link--primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     border: none;
     min-width: 62px;
@@ -151,6 +154,7 @@
     font-size: 8px;
     line-height: calc(10/8);
     color: #fff;
+    text-align: center;
 
     @include desktop{
         min-width: 107px;
@@ -163,12 +167,15 @@
 
 }  
 
-.hero-btn__btn--secondary {
-    display: block;
+.hero-btn__link--secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     border: none;
     min-width: 83px;
     height: 24px;
+    text-align: center;
     
     background-color: #fff;
 
@@ -180,6 +187,7 @@
         &:hover,
         &:focus {
             background-color: #ECEBEB;
+           
         }
      
                 @include desktop {

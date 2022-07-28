@@ -191,6 +191,7 @@
 
 .modal-location__adress {
   font-family: 'Titan One';
+  height: 100%;
   font-style: normal;
   font-weight: 400;
   padding-left: 20px;
@@ -217,6 +218,8 @@
 .modal-location__link-ny {
   cursor: url(https://cur.cursors-4u.net/food/foo-4/foo352.ani),
     url(https://cur.cursors-4u.net/food/foo-4/foo352.png), pointer;
+  display: block;
+  height: 100%;
 }
 
 // .modal-location__link-chikago {

@@ -277,6 +277,7 @@
   border-radius: 2px;
   // border: 1px solid rgba(0, 0, 0, 0.1);
   border: 1.6px solid #e18298;
+  transition: border 300ms linear, background 300ms linear;
   &:hover,
   &:focus {
     border: 1.6px solid var(--background-btn1);
@@ -284,19 +285,32 @@
   }
 }
 
+.checkbox__input:focus + .checkbox__icon,
+.checkbox__input:hover + .checkbox__icon {
+  border: 1px solid black;
+}
+
+.checkbox__input:checked:focus + .checkbox__icon,
+.checkbox__input:checked:hover + .checkbox__icon {
+  border: 1px solid black;
+}
+
 .checkbox__input:checked + .checkbox__icon {
   background-color: var(--background-btn1);
   background-image: url(/src/images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 2px;
-  border: 1.6px solid var(--background-btn1);
+  // border-radius: 2px;
+  // border: 1.6px solid var(--background-btn1);
   background-size: contain;
 }
 
 .checkbox__label {
   display: flex;
   align-items: flex-end;
+  @include desktop {
+    align-items: center;
+  }
 }
 
 .checkbox__contract {

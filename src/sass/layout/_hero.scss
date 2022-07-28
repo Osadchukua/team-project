@@ -131,6 +131,14 @@
     margin-right: 8px;
 }
 
+.hero-btn__link{
+    &:hover,
+    &:focus{
+        border-color: transparent;
+        outline: none;
+    }
+}
+
 .hero-btn__btn--primary{
     display: block;
     border-radius: 20px;
@@ -261,17 +269,6 @@
     margin-bottom: 16px;
     z-index: 1;
 
-//     &:first-child .hero-benefits__number{
-//         text-align: left;
-//     }
-
-//     &:last-child{
-//         margin-bottom: 0;
-//     }
-
-//     &:last-child .hero-benefits__text {
-//             text-align: left;
-//         }
 }
 
 
